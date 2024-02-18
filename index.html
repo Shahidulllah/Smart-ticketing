@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P-Ticket</title>
+
+    <!-- Daisy UI and Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
+
 <body>
-    
+    <header class="mx-24 mt-10">
+        <!-- Navbar Section -->
+        <nav class="flex justify-between items-center">
+            <div class="title">
+                <h1 class="text-3xl font-bold">P-Ticket</h1>
+            </div>
+            <div class="menu">
+                <ul class="flex gap-7">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Destination</a></li>
+                    <li><a href="#">Dtails</a></li>
+                </ul>
+            </div>
+            <div class="btn w-32 bg-green-100 border-green-300"><button
+                    class="flex gap-2 items-center text-xl text-green-400">Bus<span><img src="./images/bus-icon.png"
+                            alt=""></span></button></div>
+        </nav>
+    </header>
+
+    <main class="mx-24 mt-7">
+        <section>
+            <!-- Banner -->
+            <div
+                class="banner bg-[url(./images/banner.png)] bg-cover bg-auto bg-no-repeat h-[600px] space-y-7 flex flex-col items-center justify-center">
+                <h1 class="text-white text-5xl font-bold">
+                    End-to-End Travel with
+                </h1>
+                <h1 class="text-[#1DD100] text-5xl font-bold">
+                    P Paribahan
+                </h1>
+                <p class="text-white text-center">Yes you can run unit tests and view the results directly within the app.<br> The
+                    integrated testing features allow for a streamilined </p>
+
+                <button class="btn bg-[#1DD100] px-10 text-black font-bold">Buy Tickets</button>
+        </section>
+
+        <!-- Offer section -->
+        <section>
+            <h1 class="text-center text-4xl font-bold mt-24 mb-16">Best offers for you</h1>
+            <div class="coupon grid grid-cols-2 gap-7">
+                <!-- coupon card-1 -->
+                <div class="coupon-card flex justify-center items-center bg-[#FFBF0F] rounded-3xl">
+                    <div class="left flex flex-col justify-center items-center text-black w-[60%] space-y-2">
+                        <h1 class="text-4xl font-extrabold">15% OFF</h1>
+                        <p class="font-bold">on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                    <img src="./images/cupon-devider.png" alt="">
+                    <div class="right flex flex-col justify-center items-center  w-[40%]">
+                        <h1 class="text-3xl font-bold">NEW<span class="text-xl">1</span><span class="text-2xl">5</span>
+                        </h1>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+                <!-- coupon card-2 -->
+                <div class="coupon-card flex justify-center items-center bg-[#F78C9C] rounded-3xl">
+                    <div class="left flex flex-col justify-center items-center text-black w-[60%] space-y-2">
+                        <h1 class="text-4xl font-extrabold">20% OFF</h1>
+                        <p class="font-bold">on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                    <img src="./images/cupon-devider.png" alt="">
+                    <div class="right flex flex-col justify-center items-center  w-[40%]">
+                        <h1 class="text-3xl font-bold">Couple <span class="text-2xl">20</span>
+                        </h1>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <!-- button -->
+           <div class="text-center">
+            <button class="btn bg-white text-[#1DD100] border-green-500 mt-12 font-bold mb-20">See All Offers</button>
+           </div>
+        </section>
+        </div>
+
+    </main>
 </body>
+
 </html>
