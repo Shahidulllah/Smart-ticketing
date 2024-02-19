@@ -41,7 +41,23 @@ for (const seat of seats) {
         else {
             alert("It's not available to buy more than four tickets..")
         }
+
+
+        
+       
     })
 }
+ // coupon 
+ const btn = document.getElementById('applyBtn');
+ btn.addEventListener('click', function(){
+    const a = document.getElementById('input').value;
+    if(a === 'NEW15' || a === 'Couple 20'){
+        grandTk.innerText = currnetTk - (currnetTk * 0.15);
+    }
+    else{
+        alert('Give a valid coupon')
+    }
+ })
+ 
 
 
