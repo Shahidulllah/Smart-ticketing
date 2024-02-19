@@ -116,7 +116,7 @@
                             <div class="flex items-center bg-[#1DD10026] gap-2 p-3 rounded-2xl">
                                 <div><img src="./images/seat-green.png" alt=""></div>
                                 <div>
-                                    <p class="text-[#1DD100] font-bold"><span>40</span> Seats left</p>
+                                    <p class="text-[#1DD100] font-bold"><span id="seatLeft">12</span> Seats left</p>
                                 </div>
                             </div>
                         </div>
@@ -194,6 +194,14 @@
                                 B3</div>
                             <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl" id="B4">
                                 B4</div>
+                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl" id="C1">
+                                C1</div>
+                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl" id="C2">
+                                C2</div>
+                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl" id="C3">
+                                C3</div>
+                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl" id="C4">
+                                C4</div>
                         </div>
                     </div>
 
@@ -201,25 +209,25 @@
                     <div class="rightt w-[50%] space-y-5">
                         <p class="border-b-2 border-dashed py-2 font-bold">Select Your Seat</p>
 
-                        <div class="bg-[#F7F8F8] rounded-2xl">
-                            <div class=" p-6 flex justify-between">
-                                <div class="seat font-bold">Seat <span class="bg-[#1DD100] px-1 rounded">2</span></div>
-                                <div class="Class font-bold">Class</div>
-                                <div class="Price font-bold">Price</div>
+                        <div id="appendable-div" class="bg-[#F7F8F8] rounded-2xl">
+                            <div id="addSeat" class=" p-6 flex justify-between">
+                                <h1 class="seat font-bold">Seat <span id="selectedSeat" class="bg-[#1DD100] px-1 rounded">0</span></h1>
+                                <h1 class="Class font-bold">Class</h1>
+                                <h1 class="Price font-bold">Price</h1>
                             </div>
 
-                            <div class="flex justify-between px-6 mb-5 mt-4">
+                            <div class="flex justify-between px-6 mb-5 mt-7">
                                 <div class="Total font-bold">Total Price</div>
-                                <div class="BDT font-bold">BDT <span class="font-bold">4110</span></div>
+                                <div class="BDT font-bold">BDT <span id="totalPrice" class="font-bold">0</span></div>
                             </div>
                             <label class="input input-bordered flex items-center gap-2 mb-6 w-[580px] mx-auto">
-                                <input type="text" class="grow px-6" placeholder="Have any coupon?" />
-                                <button class="btn px-10 py-3 bg-[#1DD100]">Apply</button>
+                                <input id="input" type="text" class="grow px-6" placeholder="Have any coupon?" />
+                                <button id="applyBtn" class="btn px-10 py-3 bg-[#1DD100]">Apply</button>
                             </label>
 
-                            <div class="flex justify-between px-6 ">
+                            <div class="flex justify-between px-6 mb-7 ">
                                 <div class="Total font-bold mb-4">Grand Total</div>
-                                <div class="BDT font-bold">BDT <span class="font-bold">4110</span></div>
+                                <div class="BDT font-bold">BDT <span id="grandTk" class="font-bold">0</span></div>
                             </div>
                         </div>
                         <button class="btn bg-[#1DD100] w-full font-bold">Next</button>
