@@ -19,7 +19,7 @@
             <div class="title">
                 <h1 class="text-3xl font-bold">P-Ticket</h1>
             </div>
-            <div class="menu">
+            <div class="menu hidden lg:block">
                 <ul class="flex gap-7">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -37,7 +37,7 @@
         <!-- Banner -->
         <section class="mx-24 mt-7">
             <div
-                class="banner bg-[url(./images/banner.png)] bg-cover bg-no-repeat h-[625px] space-y-7 flex flex-col items-center justify-center">
+                class="banner bg-[url(./images/banner.png)] bg-cover bg-no-repeat lg:h-[625px] space-y-7 flex flex-col items-center justify-center">
                 <h1 class="text-white text-5xl font-bold">
                     End-to-End Travel with
                 </h1>
@@ -50,11 +50,35 @@
 
                 <button class="btn bg-[#1DD100] px-10 text-black font-bold">Buy Tickets</button>
         </section>
+        <!-- banner lower card -->
+        <div class="card-all-container flex gap-5 justify-center mt-[-60px]">
+            <div class="single-card-container  bg-white p-7 border-b-2 border-green-500 rounded-3xl w-80 flex gap-4 justify-center">
+                <div class="logo"><img src="./images/people.png" alt=""></div>
+                <div class="text">
+                    <h1 class="text-4xl font-bold">500K+</h1>
+                    <p>Registered users</p>
+                </div>
+            </div>
+            <div class="single-card-container  bg-white p-7 border-b-2 border-green-500 rounded-3xl w-80 flex gap-4 justify-center">
+                <div class="logo"><img src="./images/ticket-cupon.png" alt=""></div>
+                <div class="text">
+                    <h1 class="text-4xl font-bold">1.7 lacks</h1>
+                    <p>Tickets sold</p>
+                </div>
+            </div>
+            <div class="single-card-container  bg-white p-7 border-b-2 border-green-500 rounded-3xl w-80 flex gap-4 justify-center">
+                <div class="logo"><img src="./images/stoppage.png" alt=""></div>
+                <div class="text">
+                    <h1 class="text-4xl font-bold">80K+</h1>
+                    <p>Rental partners</p>
+                </div>
+            </div>
+        </div>
 
         <!-- Offer section -->
         <section class="mx-24 mt-7">
             <h1 class="text-center text-4xl font-bold mt-24 mb-16">Best offers for you</h1>
-            <div class="coupon grid grid-cols-2 gap-7">
+            <div class="coupon grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-7">
                 <!-- coupon card-1 -->
                 <div class="coupon-card flex justify-center items-center bg-[#FFBF0F] rounded-3xl">
                     <div class="left flex flex-col justify-center items-center text-black w-[60%] space-y-2">
@@ -105,7 +129,7 @@
                     <!-- header -->
 
                     <div class="leeft w-[75%] p-7">
-                        <div class="flex justify-between">
+                        <div class="lg:flex justify-between">
                             <div class="title flex gap-3 items-center">
                                 <img src="./images/bus-logo.png" alt="">
                                 <div>
@@ -133,7 +157,7 @@
                                 <p class="py-3 font-bold">9:00 PM</p>
                             </div>
                             <!-- box -->
-                            <div class="grid grid-cols-3 gap-5">
+                            <div class="grid lg:grid-cols-3 gap-5">
                                 <div class="bg-[#0307120D] p-4 rounded-2xl text-center">
                                     <p>Boarding Point - Laxmipur</p>
                                 </div>
@@ -146,7 +170,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mt-[-5px]"> <img src="./images/info-devider.png" alt=""></div>
+                    <div class="hidden lg:block mt-[-5px]"> <img src="./images/info-devider.png" alt=""></div>
 
                     <div class="rightt space-y-3 w-[25%] flex flex-col justify-center items-center">
                         <img src="./images/fare.png" alt="">
@@ -174,33 +198,48 @@
                         </div>
 
                         <!-- seat -->
-                        <div class="seat grid grid-cols-4 gap-7  mt-7">
+                        <div class="flex justify-end mt-3">
                             <div
-                                class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl col-span-4 w-24">
-                                stearing</div>
-                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl" id="A1">
+                            class="box flex items-center justify-center bg-[#F7F8F8] text-center p-4 lg:p-7 rounded-2xl lg:rounded-full w-24 lg:w-32 ">
+                            stearing</div>
+                        </div>
+                        <div class="seat grid grid-cols-4 gap-7  mt-7">
+
+                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl"
+                                id="A1">
                                 A1</div>
-                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl" id="A2">
+                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl"
+                                id="A2">
                                 A2</div>
-                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl" id="A3">
+                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl"
+                                id="A3">
                                 A3</div>
-                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl" id="A4">
+                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl"
+                                id="A4">
                                 A4</div>
-                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl" id="B1">
+                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl"
+                                id="B1">
                                 B1</div>
-                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl" id="B2">
+                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl"
+                                id="B2">
                                 B2</div>
-                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl" id="B3">
+                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl"
+                                id="B3">
                                 B3</div>
-                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl" id="B4">
+                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl"
+                                id="B4">
                                 B4</div>
-                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl" id="C1">
+                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl"
+                                id="C1">
                                 C1</div>
-                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl" id="C2">
+                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl"
+                                id="C2">
                                 C2</div>
-                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl" id="C3">
+                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl"
+                                id="C3">
                                 C3</div>
-                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl" id="C4">
+                            <div class="box flex items-center justify-center bg-[#F7F8F8] text-center p-3 rounded-2xl"
+                                id="C4">
                                 C4</div>
                         </div>
                     </div>
@@ -210,20 +249,27 @@
                         <p class="border-b-2 border-dashed py-2 font-bold">Select Your Seat</p>
 
                         <div id="appendable-div" class="bg-[#F7F8F8] rounded-2xl">
-                            <div id="addSeat" class=" p-6 flex justify-between">
-                                <h1 class="seat font-bold">Seat <span id="selectedSeat" class="bg-[#1DD100] px-1 rounded">0</span></h1>
+                            <div id="addSeat" class=" p-6 flex justify-between border-b-2 border-dashed">
+                                <h1 class="seat font-bold">Seat <span id="selectedSeat"
+                                        class="bg-[#1DD100] px-1 rounded">0</span></h1>
                                 <h1 class="Class font-bold">Class</h1>
                                 <h1 class="Price font-bold">Price</h1>
                             </div>
+                            <!-- selected div -->
+                            <div id="selected-seat"></div>
 
-                            <div class="flex justify-between px-6 mb-5 mt-7">
+                            <div class="flex justify-between px-6 mb-5 mt-7 border-t-2">
                                 <div class="Total font-bold">Total Price</div>
                                 <div class="BDT font-bold">BDT <span id="totalPrice" class="font-bold">0</span></div>
                             </div>
-                            <label class="input input-bordered flex items-center gap-2 mb-6 w-[580px] mx-auto">
-                                <input id="input" type="text" class="grow px-6" placeholder="Have any coupon?" />
-                                <button id="applyBtn" class="btn px-10 py-3 bg-[#1DD100]">Apply</button>
+                            <label class="input input-bordered flex items-center gap-2 mb-2 lg:mb-6 lg:w-[580px] mx-auto">
+                                <input id="input" type="text" class="lg:grow px-6" placeholder="Have any coupon?" />
+                                <button onclick="applyBtn()" id="applyBtn" class="hidden lg:block btn px-10 py-3 bg-[#1DD100]">Apply</button>
                             </label>
+                            <!-- responsive button -->
+                            <div class="lg:hidden text-center mb-3">
+                                <button onclick="applyBtn()" id="applyBtn" class=" btn px-7 py-2 bg-[#1DD100]">Apply</button>
+                            </div>
 
                             <div class="flex justify-between px-6 mb-7 ">
                                 <div class="Total font-bold mb-4">Grand Total</div>
@@ -238,6 +284,11 @@
         </section>
 
     </main>
+
+    <!-- External section -->
+   <div class="container">
+
+   </div>
 
     <!-- Footer section -->
     <footer class="footer footer-center p-10 bg-black text-primary-content mt-16">
