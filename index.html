@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header class="mx-24 mt-10">
+    <header class="mx-7 lg:mx-24 mt-10">
         <!-- Navbar Section -->
         <nav class="flex justify-between items-center">
             <div class="title">
@@ -35,23 +35,23 @@
 
     <main>
         <!-- Banner -->
-        <section class="mx-24 mt-7">
+        <section class="mx-7 lg:mx-24 mt-7">
             <div
-                class="banner bg-[url(./images/banner.png)] bg-cover bg-no-repeat lg:h-[625px] space-y-7 flex flex-col items-center justify-center">
-                <h1 class="text-white text-5xl font-bold">
+                class="banner bg-[url(./images/banner.png)] bg-cover bg-no-repeat max-h-full lg:h-[625px] lg:space-y-7 p-10 lg:p-0 flex flex-col items-center justify-center">
+                <h1 class="text-white text-2xl lg:text-5xl font-bold">
                     End-to-End Travel with
                 </h1>
-                <h1 class="text-[#1DD100] text-5xl font-bold">
+                <h1 class="text-[#1DD100] text-2xl lg:text-5xl font-bold">
                     P Paribahan
                 </h1>
-                <p class="text-white text-center">Yes you can run unit tests and view the results directly within the
-                    app.<br> The
+                <p class="text-white text-center ">Yes you can run unit tests and view the results directly within the
+                    app.<br class="hidden lg:block"> The
                     integrated testing features allow for a streamilined </p>
 
                 <button class="btn bg-[#1DD100] px-10 text-black font-bold">Buy Tickets</button>
         </section>
         <!-- banner lower card -->
-        <div class="card-all-container flex gap-5 justify-center mt-[-60px]">
+        <div class="card-all-container hidden lg:block lg:flex gap-5 justify-center mt-[-60px]">
             <div
                 class="single-card-container  bg-white p-7 border-b-2 border-green-500 rounded-3xl w-80 flex gap-4 justify-center">
                 <div class="logo"><img src="./images/people.png" alt=""></div>
@@ -79,7 +79,7 @@
         </div>
 
         <!-- Offer section -->
-        <section class="mx-24 mt-7">
+        <section class="mx-7 lg:mx-24 mt-7">
             <h1 class="text-center text-4xl font-bold mt-24 mb-16">Best offers for you</h1>
             <div class="coupon grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-7">
                 <!-- coupon card-1 -->
@@ -120,7 +120,7 @@
 
         <!-- About section -->
         <section class="border-t-2 rounded-t-[100px] border-green-500 bg-[#F7F8F8]">
-            <div class="mx-24 mt-7">
+            <div class="mx-7 lg:mx-24 mt-7">
                 <div class="heading text-center space-y-4 mt-20 mb-7">
                     <h1 class="text-3xl font-bold">P.H Paribahan</h1>
                     <p>Yes, you can run unit tests and view the results directly within the app. The integrated
@@ -265,24 +265,27 @@
                                 <div class="Total font-bold">Total Price</div>
                                 <div class="BDT font-bold">BDT <span id="totalPrice" class="font-bold">0</span></div>
                             </div>
+                           <div id="coupon">
                             <label
-                                class="input input-bordered flex items-center gap-2 mb-2 lg:mb-6 lg:w-[580px] mx-auto">
-                                <input id="input" type="text" class="lg:grow px-6" placeholder="Have any coupon?" />
-                                <button onclick="applyBtn()" id="applyBtn"
-                                    class="hidden lg:block btn px-10 py-3 bg-[#1DD100]">Apply</button>
-                            </label>
-                            <!-- responsive button -->
-                            <div class="lg:hidden text-center mb-3">
-                                <button onclick="applyBtn()" id="applyBtn"
-                                    class=" btn px-7 py-2 bg-[#1DD100]">Apply</button>
-                            </div>
+                            class="input input-bordered flex items-center gap-2 mb-2 lg:mb-6 lg:w-[580px] mx-auto">
+                            <input id="input" type="text" class="lg:grow px-6" placeholder="Have any coupon?" />
+                            <button onclick="applyBtn()" id="applyBtn"
+                                class="hidden lg:block btn px-10 py-3 bg-[#1DD100]">Apply</button>
+                        </label>
+                        <!-- responsive button -->
+                        <div class="lg:hidden text-center mb-3">
+                            <button onclick="applyBtn()" id="applyBtn"
+                                class=" btn px-7 py-2 bg-[#1DD100]">Apply</button>
+                        </div>
+                           </div>
 
                             <div class="flex justify-between px-6 mb-7 ">
                                 <div class="Total font-bold mb-4">Grand Total</div>
                                 <div class="BDT font-bold">BDT <span id="grandTk" class="font-bold">0</span></div>
                             </div>
                         </div>
-                        <button class="btn bg-[#1DD100] w-full font-bold" onclick="my_modal_5.showModal()">Next</button>
+                        <button id="next-btn" class="btn bg-[#1DD100] w-full font-bold"
+                            onclick="my_modal_5.showModal()">Next</button>
                     </div>
 
                 </div>
@@ -343,7 +346,7 @@
                     <h1 class="text-green-500 text-xl font-bold my-7">SUCCESS</h1>
                     <p class="font-bold text-center">Thank you for Booking Our Bus Seats.
                         We are working hard to find the best service and deals for you</p>
-                        <p>Shortly you will find a confirmation in your email</p>
+                    <p>Shortly you will find a confirmation in your email</p>
                 </div>
                 <div class="modal-action flex justify-center mb-8">
                     <form method="dialog">
