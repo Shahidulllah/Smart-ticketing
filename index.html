@@ -35,7 +35,7 @@
 
     <main>
         <!-- Banner -->
-        <section class="lg:mx-24 mt-7">
+        <section class="mx-3 lg:mx-24 mt-7">
             <div
                 class="banner bg-[url(./images/banner.png)] bg-cover bg-no-repeat max-h-full lg:h-[625px] lg:space-y-7 p-10 lg:p-0 flex flex-col items-center justify-center">
                 <h1 class="text-white text-2xl lg:text-5xl font-bold">
@@ -51,7 +51,7 @@
                 <button class="btn bg-[#1DD100] px-10 text-black font-bold">Buy Tickets</button>
         </section>
         <!-- banner lower card -->
-        <div class="card-all-container hidden lg:block lg:flex gap-5 justify-center mt-[-60px]">
+        <div class="card-all-container hidden lg:flex gap-5 justify-center mt-[-60px]">
             <div
                 class="single-card-container  bg-white p-7 border-b-2 border-green-500 rounded-3xl w-80 flex gap-4 justify-center">
                 <div class="logo"><img src="./images/people.png" alt=""></div>
@@ -79,7 +79,7 @@
         </div>
 
         <!-- Offer section -->
-        <section class="lg:mx-24 mt-7">
+        <section class="mx-3 lg:mx-24 mt-7">
             <h1 class="text-center text-4xl font-bold mt-24 mb-16">Best offers for you</h1>
             <div class="coupon grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-7">
                 <!-- coupon card-1 -->
@@ -128,10 +128,10 @@
                     </p>
                 </div>
                 <!-- content -->
-                <div class="main rounded-2xl  bg-white flex">
+                <div class="main rounded-2xl  bg-white lg:flex">
                     <!-- header -->
 
-                    <div class="leeft w-[75%] p-7">
+                    <div class="leeft lg:w-[75%] p-7">
                         <div class="lg:flex justify-between">
                             <div class="title flex gap-3 items-center">
                                 <img src="./images/bus-logo.png" alt="">
@@ -140,7 +140,7 @@
                                     <p>Coach-009-WEB ! AC_Business</p>
                                 </div>
                             </div>
-                            <div class="flex items-center bg-[#1DD10026] gap-2 p-3 rounded-2xl">
+                            <div class="mt-3 lg:mt-0 flex items-center bg-[#1DD10026] gap-2 p-3 rounded-2xl">
                                 <div><img src="./images/seat-green.png" alt=""></div>
                                 <div>
                                     <p class="text-[#1DD100] font-bold"><span id="seatLeft">12</span> Seats left</p>
@@ -175,7 +175,7 @@
                     </div>
                     <div class="hidden lg:block mt-[-5px]"> <img src="./images/info-devider.png" alt=""></div>
 
-                    <div class="rightt space-y-3 w-[25%] flex flex-col justify-center items-center">
+                    <div class="rightt space-y-3 lg:w-[25%] flex flex-col pb-7 justify-center items-center">
                         <img src="./images/fare.png" alt="">
                         <h1 class="text-2xl font-bold">550 Taka</h1>
                         <p>Per Seat</p>
@@ -183,9 +183,9 @@
                 </div>
 
                 <!-- Seat Plan -->
-                <div class="main-container mt-4 bg-white rounded-2xl p-7 flex justify-between gap-10">
+                <div class="main-container mt-4 bg-white rounded-2xl p-7 lg:flex justify-between gap-10">
                     <!-- left -->
-                    <div class="lefft w-[50%]">
+                    <div class="lefft lg:w-[50%]">
                         <p class="border-b-2 border-dashed py-2 font-bold">Select Your Seat</p>
 
                         <div class="flex justify-between border-b-2 border-dashed">
@@ -248,7 +248,7 @@
                     </div>
 
                     <!-- right -->
-                    <div class="rightt w-[50%] space-y-5">
+                    <div class="rightt lg:w-[50%] space-y-5">
                         <p class="border-b-2 border-dashed py-2 font-bold">Select Your Seat</p>
 
                         <div id="appendable-div" class="bg-[#F7F8F8] rounded-2xl">
@@ -267,16 +267,12 @@
                             </div>
                            <div id="coupon">
                             <label
-                            class="input input-bordered flex items-center gap-2 mb-2 lg:mb-6 lg:w-[580px] mx-auto">
+                            class="input input-bordered flex items-center gap-2 mb-2 lg:mb-6 lg:w-[580px] lg:mx-auto">
                             <input id="input" type="text" class="lg:grow lg:px-6" placeholder="Have any coupon?" />
                             <button onclick="applyBtn()" id="applyBtn"
-                                class="hidden lg:block btn px-10 py-3 bg-[#1DD100]">Apply</button>
-                        </label>
-                        <!-- responsive button -->
-                        <div class="lg:hidden text-center mb-3">
-                            <button onclick="applyBtn()" id="applyBtn"
-                                class=" btn px-7 py-2 bg-[#1DD100]">Apply</button>
-                        </div>
+                                class="btn px-10 py-3 bg-[#1DD100]">Apply</button>
+                        </label>                   
+                       
                            </div>
 
                             <div class="flex justify-between px-6 mb-7 ">
