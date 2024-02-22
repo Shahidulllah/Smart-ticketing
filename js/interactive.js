@@ -69,27 +69,24 @@ for (const seat of seats) {
         if(inputValue === 'NEW15'){
           const discount = grandTk.innerText * 0.15;
           const grandTotal = grandTk.innerText - discount;
-          grandTk.innerText = grandTotal;
+          grandTk.innerText = parseInt(grandTotal);
         //   hidden
           document.getElementById('coupon').style.display = 'none';
         }
         else if(inputValue === 'Couple 20'){
             const discount = grandTk.innerText * 0.20;
             const grandTotal = grandTk.innerText - discount;
-            grandTk.innerText = grandTotal;
+            grandTk.innerText = parseInt(grandTotal);
             // hidden
             document.getElementById('coupon').style.display = 'none';
         }
 
         else{
-            alert('Invalid coupon..!')
+            alert('Please give a valid coupon..!')
         }
     }
 
-    // hide the coupon section
-    // document.getElementById('apply-btn').addEventListener('click', function(){
-    //     console.log('clicke')
-    // })
+    
  
 
 
